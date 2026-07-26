@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SS Mobile | Premium Phones & Accessories</title>
+    <meta
+      name="description"
+      content="Shop the latest smartphones, accessories, tablets, and smart TVs at SS Mobile."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header id="topbar" class="topbar">
+        <a class="brand" href="#">
+          <span class="brand-mark">S</span>
+          <span>
+            <strong>SS Mobile</strong>
+            <small>Official Store</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#shop">Shop</a>
+          <a href="#deals">Deals</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <label class="search-box" for="searchInput">
+            <span>🔍</span>
+            <input id="searchInput" type="search" placeholder="Search phones, accessories..." />
+          </label>
+          <button id="cartToggle" class="icon-btn" aria-label="Open cart">
+            🛒
+            <span id="cartCount" class="pill">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Fast delivery • 24/7 support • EMI options</p>
+            <h1>Upgrade your tech with the best deals in town.</h1>
+            <p>
+              Discover premium smartphones, smart TVs, tablets, gaming accessories, and
+              unbeatable exchange offers from SS Mobile.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#shop">Shop now</a>
+              <a class="btn btn-secondary" href="#deals">View deals</a>
+              <button id="hero360Button" class="btn btn-secondary">Explore 360°</button>
+            </div>
+            <div class="hero-metrics">
+              <div>
+                <strong>500+</strong>
+                <span>Outlets</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div>
+                <strong>Same day</strong>
+                <span>Delivery in city</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=80"
+              alt="Phone and accessories showcase"
+            />
+          </div>
+        </section>
+
+        <section class="categories-section">
+          <div class="section-heading">
+            <h2>Browse by category</h2>
+            <p>Everything you need for a smarter digital life.</p>
+          </div>
+          <div class="category-grid">
+            <article class="category-card">
+              <h3>Smartphones</h3>
+              <p>Flagship and mid-range phones with EMI options.</p>
+            </article>
+            <article class="category-card">
+              <h3>Accessories</h3>
+              <p>Cases, chargers, earbuds, cables, and power banks.</p>
+            </article>
+            <article class="category-card">
+              <h3>Tablets</h3>
+              <p>Study, work, and entertainment in one sleek device.</p>
+            </article>
+            <article class="category-card">
+              <h3>Smart TVs</h3>
+              <p>Immersive viewing at home with crisp visuals.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="shop" class="shop-section">
+          <div class="section-heading">
+            <h2>Featured products</h2>
+            <p>Trusted devices and accessories chosen for value and performance.</p>
+          </div>
+
+          <div class="shop-controls">
+            <div class="filter-group" id="categoryFilters"></div>
+            <button id="filterToggle" class="icon-btn filter-toggle" type="button">⚙️ Filters</button>
+            <label class="sr-only" for="sortSelect">Sort products</label>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name</option>
+            </select>
+          </div>
+
+          <div id="productGrid" class="product-grid"></div>
+        </section>
+
+        <section id="deals" class="offer-banner">
+          <div>
+            <p class="eyebrow">Limited-time launch</p>
+            <h2>Festival offers are live now</h2>
+            <p>Get up to 30% off select accessories and free delivery on orders above ₹999.</p>
+          </div>
+          <a class="btn btn-primary" href="#shop">Claim offer</a>
+        </section>
+
+        <section id="about" class="info-grid">
+          <article>
+            <h3>Why customers love SS Mobile</h3>
+            <p>From expert consultation to fast setup support, every purchase is backed by friendly guidance.</p>
+          </article>
+          <article>
+            <h3>Easy EMI & exchange</h3>
+            <p>Flexible payment plans and trade-in offers make upgrading easier than ever.</p>
+          </article>
+          <article>
+            <h3>Trusted by thousands</h3>
+            <p>Customers choose SS Mobile for dependable service, genuine products, and real value.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer">
+        <div>
+          <h3>SS Mobile</h3>
+          <p>GP Tower, Main Road, Deglur, Maharashtra 431717</p>
+        </div>
+        <div>
+          <h3>Call us</h3>
+          <p>089565 67534</p>
+        </div>
+        <div>
+          <h3>Open hours</h3>
+          <p>Mon-Sun • 10:00 AM to 10:00 PM</p>
+        </div>
+      </footer>
+    </div>
+
+    <div id="cartOverlay" class="overlay hidden"></div>
+    <aside id="cartDrawer" class="cart-drawer hidden" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button id="closeCart" class="icon-btn">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">₹0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <strong>Free</strong>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <strong id="total">₹0</strong>
+        </div>
+        <form id="checkoutForm" class="checkout-form">
+          <input type="text" id="customerName" placeholder="Your name" required />
+          <input type="email" id="customerEmail" placeholder="Email address" required />
+          <input type="tel" id="customerPhone" placeholder="Phone number" required />
+          <button class="btn btn-primary full" type="submit">Place order</button>
+        </form>
+      </div>
+    </aside>
+
+    <div id="filterOverlay" class="overlay hidden"></div>
+    <aside id="filterDrawer" class="filter-drawer hidden" aria-label="Refine product results">
+      <div class="cart-header">
+        <h3>Refine search</h3>
+        <button id="closeFilter" class="icon-btn">✕</button>
+      </div>
+      <div class="drawer-body">
+        <label class="filter-field">
+          <span>Max price</span>
+          <input id="maxPriceInput" type="range" min="1000" max="100000" step="1000" value="100000" />
+          <strong id="maxPriceValue">₹100,000</strong>
+        </label>
+
+        <label class="filter-field">
+          <span>Brand</span>
+          <select id="brandSelect">
+            <option value="All">All brands</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Apple">Apple</option>
+            <option value="Noise">Noise</option>
+            <option value="Sony">Sony</option>
+            <option value="Anker">Anker</option>
+          </select>
+        </label>
+
+        <div class="filter-field">
+          <span>Specs</span>
+          <div class="spec-grid">
+            <label><input type="checkbox" class="spec-filter" value="5G" /> 5G</label>
+            <label><input type="checkbox" class="spec-filter" value="Camera" /> Camera</label>
+            <label><input type="checkbox" class="spec-filter" value="Battery" /> Battery</label>
+            <label><input type="checkbox" class="spec-filter" value="Fast charging" /> Fast charging</label>
+          </div>
+        </div>
+
+        <div class="filter-actions">
+          <button id="applyFilters" class="btn btn-primary full" type="button">Apply filters</button>
+          <button id="resetFilters" class="btn btn-secondary full" type="button">Reset</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="accountOverlay" class="overlay hidden"></div>
+    <aside id="accountSheet" class="account-sheet hidden" aria-label="Your account">
+      <div class="cart-header">
+        <h3>Account</h3>
+        <button id="closeAccount" class="icon-btn">✕</button>
+      </div>
+      <div class="drawer-body">
+        <p>Sign in to save favorite products, track delivery, and keep your cart synced across devices.</p>
+        <button class="btn btn-primary full" type="button">Continue with phone</button>
+      </div>
+    </aside>
+
+    <div id="view360Overlay" class="overlay hidden"></div>
+    <div id="view360Modal" class="view-360-modal hidden" role="dialog" aria-modal="true" aria-label="360 product view">
+      <div class="cart-header">
+        <h3 id="view360Title">Product 360° view</h3>
+        <button id="close360View" class="icon-btn">✕</button>
+      </div>
+      <div class="drawer-body view-360-body">
+        <img id="view360Image" alt="360 view preview" />
+        <div class="view-360-controls">
+          <button id="prev360" class="btn btn-secondary" type="button">◀</button>
+          <span id="view360Counter">Frame 1 / 6</span>
+          <button id="next360" class="btn btn-secondary" type="button">▶</button>
+        </div>
+        <p class="view-360-hint">Rotate through the preview to inspect the product from every angle.</p>
+      </div>
+    </div>
+
+    <nav class="bottom-nav" aria-label="Thumb-zone navigation">
+      <button data-action="home" type="button">🏠<span>Home</span></button>
+      <button data-action="search" type="button">🔍<span>Search</span></button>
+      <button data-action="cart" type="button">🛒<span>Cart</span></button>
+      <button data-action="account" type="button">👤<span>Account</span></button>
+    </nav>
+
+    <!-- Chatbot -->
+    <button id="chatBubble" class="chat-bubble" aria-label="Open chat">
+      💬
+    </button>
+
+    <aside id="chatWindow" class="chat-window hidden" aria-label="Chat with SS Mobile">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <span class="chat-avatar">🤖</span>
+          <div>
+            <strong>SS Mobile Bot</strong>
+            <small>Online • Usually replies instantly</small>
+          </div>
+        </div>
+        <button id="closeChat" class="icon-btn chat-close">✕</button>
+      </div>
+
+      <div id="chatMessages" class="chat-messages">
+        <div class="chat-msg bot">
+          <span>👋</span>
+          <div>
+            <p>Hi there! Welcome to <strong>SS Mobile</strong>. I'm your virtual assistant.</p>
+            <p>Ask me about our products, offers, store info, or anything else!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="quickReplies" class="quick-replies"></div>
+
+      <div class="chat-input-area">
+        <input
+          id="chatInput"
+          type="text"
+          placeholder="Type a message..."
+          autocomplete="off"
+        />
+        <button id="sendChat" class="chat-send-btn" aria-label="Send message">➤</button>
+      </div>
+    </aside>
+    <!-- End Chatbot -->
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
