@@ -51,7 +51,7 @@ export default function Navbar({ onOpenSearch, onOpenCart, onOpenMenu, onOpenCha
           S
         </span>
         <span className="leading-tight">
-          <strong className="block text-sm font-extrabold text-ink">SS Mobile</strong>
+          <strong className="block text-sm font-extrabold text-ink">modern Mobile</strong>
           <small className="block text-[11px] text-muted">Official Store</small>
         </span>
       </Link>
